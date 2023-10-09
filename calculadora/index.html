@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- container principal calc -->
+    <div class="container">
+        <input type="text" id="visor" disabled>
+
+        <!-- botoes NUMEROS -->
+        <div class="teclado">
+            <button class="numero" onclick="calculadora.adicionarNumero('7')">7</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('8')">8</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('9')">9</button>
+
+            <!-- operação divisão -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('/')">/</button>
+
+            <button class="numero" onclick="calculadora.adicionarNumero('4')">4</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('5')">5</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('6')">6</button>
+
+            <!-- operação multiplicação -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('*')">*</button>
+
+            <button class="numero" onclick="calculadora.adicionarNumero('1')">1</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('2')">2</button>
+            <button class="numero" onclick="calculadora.adicionarNumero('3')">3</button>
+
+            <!-- operação subtração -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('-')">-</button>
+
+            <!-- valor 0 -->
+            <button class="numero" onclick="calculadora.adicionarNumero('0')">0</button>
+
+            <!-- limpar -->
+            <button onclick="calculadora.limpar()">C</button>
+
+            <!-- operação adição -->
+            <button class="operacao" onclick="calculadora.adicionarOperacao('+')">+</button>
+
+            <!-- resultado -->
+            <button onclick="calculadora.resultado()">=</button>
+            
+
+            <!-- SCRIPT JS -->
+            <script src="main.js"></script>
+        </div>
+    </div>
+
+</body>
+
+</html>
